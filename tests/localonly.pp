@@ -1,6 +1,6 @@
 #local only test of package file service
 package {'openssh':
-  name   => 'openssh'
+  name   => 'openssh',
   ensure => present,
 }
 
