@@ -25,7 +25,7 @@ Subsystem sftp  /usr/libexec/openssh/sftp-server",
 
 service {'ssh':
   name    => 'ssh',
-  require => Package['openssh'],
+  require => Package['openssh-server'],
 }
 
 
