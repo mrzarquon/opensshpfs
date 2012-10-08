@@ -9,7 +9,7 @@ file {'sshd_config':
   ensure  => file,
   owner   => root,
   group   => root,
-  mode    => '0644',
+  mode    => '0600',
   notify  => Service['opensshd'],
   content => "Protocol 2
 SyslogFacility AUTHPRIV
