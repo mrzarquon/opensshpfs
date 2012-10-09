@@ -1,5 +1,5 @@
 #hiera example
-class opensshpfs::generic(
+class opensshpfs::hiera(
   $sshd_packagename = $opensshpfs::params::sshd_packagename,
   $sshd_servicename = $opensshpfs::params::sshd_servicename
 ) inherits opensshpfs::params {
