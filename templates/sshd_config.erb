@@ -1,0 +1,19 @@
+#erb template used for sshd_config
+Protocol 2
+SyslogFacility AUTHPRIV
+<% if @PermitRootLogin %>
+  PermitRootLogin <%= @PermitRootLogin %>
+<% else %>
+  PermitRootLogin no
+<% end %>
+<% if @PasswordAuthentication %>
+  PasswordAuthentication <%= @PasswordAuthentication %>
+<% else %>
+  PasswordAuthentication no
+<% end %>
+GSSAPIAuthentication no
+GSSAPICleanupCredentials yes
+UsePAM yes
+ChallengeResponseAuthentication no
+X11Forwarding yes
+Subsystem sftp  /usr/libexec/openssh/sftp-server
