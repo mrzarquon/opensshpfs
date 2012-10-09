@@ -2,14 +2,14 @@
 Protocol 2
 SyslogFacility AUTHPRIV
 <% if @PermitRootLogin %>
-  PermitRootLogin <%= @PermitRootLogin %>
+PermitRootLogin <%= @PermitRootLogin %>
 <% else %>
-  PermitRootLogin no
+PermitRootLogin no
 <% end %>
 <% if @PasswordAuthentication %>
-  PasswordAuthentication <%= @PasswordAuthentication %>
+PasswordAuthentication <%= @PasswordAuthentication %>
 <% else %>
-  PasswordAuthentication no
+PasswordAuthentication no
 <% end %>
 GSSAPIAuthentication no
 GSSAPICleanupCredentials yes
