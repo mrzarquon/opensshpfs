@@ -1,4 +1,8 @@
 #local only test of package file service
+
+$PermitRootLogin = yes
+$PasswordAuthentication = yes
+
 package {'openssh-server':
   name   => 'openssh-server',
   ensure => present,
